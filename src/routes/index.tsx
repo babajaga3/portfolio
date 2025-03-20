@@ -17,7 +17,7 @@ function Index() {
         <div className={'flex flex-row gap-2 pl-12'}>
           <Code />
           <h3 className={'text-theme-accent flex flex-row gap-1.5'}>
-            Frontend React Engineer
+            Full-Stack Developer
           </h3>
         </div>
         <SocialBar />
