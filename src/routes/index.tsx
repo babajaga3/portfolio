@@ -12,7 +12,7 @@ function Index() {
     <div className={'grid grid-cols-2'}>
       <div className={'bg-theme-foreground'}>
         <h1 className={'text-theme-accent text-5xl font-bold p-8'}>
-          What&apos;s cooking, good looking?
+          Toma Bourov
         </h1>
         <div className={'flex flex-row gap-2 pl-12'}>
           <Code />
