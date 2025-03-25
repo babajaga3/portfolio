@@ -79,10 +79,10 @@
 
 @font-face {
     font-family: 'neue-maksima-light';
-    src: url('./assets/neue-maksima-light.otf');
+    src: url('./assets/fonts/neue-maksima-light.otf');
 }
 
 @font-face {
     font-family: 'neue-maksima';
-    src: url('./assets/neue-maksima.otf');
+    src: url('./assets/fonts/neue-maksima.otf');
 }
