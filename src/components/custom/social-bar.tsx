@@ -1,11 +1,11 @@
-import { Github, Linkedin, Instagram } from 'iconoir-react'
+import { Github, Linkedin, Instagram } from 'lucide-react'
 import { cn } from '@/lib/utils.ts'
 
 
 export function SocialBar() {
   const socialCn = cn([
-    'text-theme-accent',
-    'hover:text-theme-accent-secondary',
+    'text-theme-accent-two',
+    'hover:text-theme-foreground-two',
     'flex',
     'flex-row',
     'gap-2',
