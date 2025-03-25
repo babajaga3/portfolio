@@ -35,6 +35,11 @@
     --theme-accent: 234 181 149;
     --theme-accent-secondary: 216 127 129;
     --theme-border: 174 99 120;
+    
+    /* Custom theme 2 */
+    --theme-background-two: 5 82 84;
+    --theme-foreground-two: 95 160 157;
+    --theme-accent-two: 244 233 190;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -70,4 +75,14 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@font-face {
+    font-family: 'neue-maksima-light';
+    src: url('./assets/neue-maksima-light.otf');
+}
+
+@font-face {
+    font-family: 'neue-maksima';
+    src: url('./assets/neue-maksima.otf');
 }
