@@ -20,7 +20,10 @@ export default {
           foreground: 'rgb(var(--theme-foreground))',
           accent: 'rgb(var(--theme-accent))',
           'accent-secondary': 'rgb(var(--theme-accent-secondary))',
-          border: 'rgb(var(--theme-border))'
+          border: 'rgb(var(--theme-border))',
+          'background-two': 'rgb(var(--theme-background-two))',
+          'foreground-two': 'rgb(var(--theme-foreground-two))',
+          'accent-two': 'rgb(var(--theme-accent-two))'
         },
         card: {
           DEFAULT: 'hsl(var(--card))',
@@ -60,7 +63,11 @@ export default {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))'
         }
-      }
+      },
+      fontFamily: {
+        NeueMaksima: ['neue-maksima', 'neue-maksima-light', 'sans-serif'],
+        NeueMaksimaLight: ['neue-maksima-light', 'neue-maksima', 'sans-serif'],
+      },
     }
   },
   plugins: [ require('tailwindcss-animate') ]
