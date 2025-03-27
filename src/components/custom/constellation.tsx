@@ -8,7 +8,7 @@ import {
 } from "@tsparticles/engine";
 import { useEffect, useState, useMemo } from 'react'
 
-export function Constellation() {
+export function Constellation({ style }: { style?: Partial<CSSStyleDeclaration> }) {
   const [init, setInit] = useState(false);
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -69,7 +69,7 @@ export function Constellation() {
               default: OutMode.out,
             },
             random: true,
-            speed: 3,
+            speed: 2,
             straight: false,
           },
           number: {
@@ -88,7 +88,8 @@ export function Constellation() {
             value: { min: 1, max: 3 },
           },
         },
-        detectRetina: true
+        detectRetina: true,
+        style
       }),
       [],
     );
