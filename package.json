@@ -12,6 +12,7 @@
   "dependencies": {
     "@radix-ui/react-navigation-menu": "^1.2.5",
     "@tanstack/react-router": "^1.62.1",
+    "@tsparticles/react": "^3.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.18.2",
@@ -23,6 +24,7 @@
     "tailwind-merge": "^2.5.3",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.169.0",
+    "vite-plugin-svgr": "^4.3.0",
     "world-atlas": "^2.0.2"
   },
   "devDependencies": {
