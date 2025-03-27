@@ -40,16 +40,7 @@ export function Constellation({ style }: { style?: Partial<CSSStyleDeclaration> 
               enable: true,
               mode: "grab",
             },
-          },
-          modes: {
-            push: {
-              quantity: 4,
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
-            },
-          },
+          }
         },
         particles: {
           color: {
@@ -76,7 +67,7 @@ export function Constellation({ style }: { style?: Partial<CSSStyleDeclaration> 
             density: {
               enable: true,
             },
-            value: 300,
+            value: 200,
           },
           opacity: {
             value: 0.5,
