@@ -1,5 +1,6 @@
 import { cn } from '@/lib/utils'
-import { Github, ExternalLink, Building } from 'lucide-react'
+import { ExternalLink, Building } from 'lucide-react'
+import GithubIcon from '@/assets/icons/github.svg?react'
 
 
 interface ProjectCardProps {
@@ -53,7 +54,7 @@ export function ProjectCard({
                 <ExternalLink />
               </a>}
               {githubLink && <a className={externalLinkCn} href={githubLink} target="_blank" rel="noopener noreferrer">
-                <Github /> {/* Deprecated, change soon */}
+                <GithubIcon className={externalLinkCn+ ' h-7 fill-white hover:fill-theme-foreground-two'} />
               </a>}
               {companyLink && <a className={externalLinkCn} href={companyLink} target="_blank" rel="noopener noreferrer">
                 <Building />

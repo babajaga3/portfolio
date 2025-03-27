@@ -110,6 +110,7 @@ function RouteComponent() {
           description='My personal portfolio website.'
           image={portfolio}
           link='https://tomabourov.com'
+          githubLink='https://github.com/babajaga3/portfolio'
           period='2025 - Present'
           technologies={portfolioTechnologies}
         />
