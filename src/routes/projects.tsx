@@ -100,7 +100,7 @@ function RouteComponent() {
           title='CleverEV'
           description='Full-stack management platform for electric vehicle charging stations.'
           image={cleverEv}
-          link='https://console.cleverev.net/login?redirect=/'
+          link='https://cleverev.net'
           companyLink='https://commentcloud.tech'
           period='2023 - 2025'
           technologies={cleverEvTechnologies}
