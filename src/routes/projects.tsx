@@ -24,6 +24,8 @@ function RouteComponent() {
     'h-6'
   ])
   
+  // TODO figure out a better way to handle the tech stacks
+  
   const cleverEvTechnologies = [
     {
       name: 'Typescript',
