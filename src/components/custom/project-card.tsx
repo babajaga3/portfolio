@@ -6,9 +6,9 @@ import GithubIcon from '@/assets/icons/github.svg?react'
 interface ProjectCardProps {
   title: string
   description: string
-  period: string
-  image: string
   technologies: { name: string; icon: React.ReactElement }[]
+  image: string
+  period?: string
   company?: string
   companyLink?: string
   githubLink?: string
@@ -48,7 +48,10 @@ export function ProjectCard({
       <div className='flex flex-col gap-8 sm:justify-between'>
         <div className="flex flex-col gap-8">
           <div className='flex flex-col sm:flex-row justify-items-start gap-4 '>
-            <h1 className='text-4xl'>{title}</h1>
+            <div className='flex flex-col'>
+              <h1 className='text-4xl'>{title}</h1>
+              {period && <h3 className='text-lg  text-neutral-400'>{period}</h3>}
+            </div>
             <div className='flex gap-4'>
               {link && <a className={externalLinkCn} href={link} target="_target" rel="noopener noreferrer">
                 <ExternalLink />
