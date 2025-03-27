@@ -1,11 +1,11 @@
 {
   "name": "portfolio",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bunx --bun vite",
     "build": "vite build",
+    "dev": "bunx --bun vite",
     "lint": "eslint .",
     "preview": "vite preview"
   },

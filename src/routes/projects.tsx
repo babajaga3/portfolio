@@ -2,33 +2,31 @@ import { createFileRoute } from '@tanstack/react-router'
 import { ProjectCard } from '@/components/custom/project-card'
 import cleverEv from '@/assets/cleverev-dash.png'
 import portfolio from '@/assets/portfolio-preview.png'
-import TypescriptIcon from '@/assets/icons/typescript.svg?react';
-import ReactIcon from '@/assets/icons/react.svg?react';
-import ViteIcon from '@/assets/icons/vite.svg?react';
-import ReactQueryIcon from '@/assets/icons/reactquery.svg?react';
-import CloudflareWorkersIcon from '@/assets/icons/cloudflareworkers.svg?react';
-import PrismaORMIcon from '@/assets/icons/prisma.svg?react';
-import ClickhouseIcon from '@/assets/icons/clickhouse.svg?react';
-import GitIcon from '@/assets/icons/git.svg?react';
-import CloudflareIcon from '@/assets/icons/cloudflare.svg?react';
-import TailwindCSSIcon from '@/assets/icons/tailwindcss.svg?react';
-import { cn } from '@/lib/utils';
+import TypescriptIcon from '@/assets/icons/typescript.svg?react'
+import ReactIcon from '@/assets/icons/react.svg?react'
+import ViteIcon from '@/assets/icons/vite.svg?react'
+import ReactQueryIcon from '@/assets/icons/reactquery.svg?react'
+import CloudflareWorkersIcon from '@/assets/icons/cloudflareworkers.svg?react'
+import PrismaORMIcon from '@/assets/icons/prisma.svg?react'
+import ClickhouseIcon from '@/assets/icons/clickhouse.svg?react'
+import GitIcon from '@/assets/icons/git.svg?react'
+import CloudflareIcon from '@/assets/icons/cloudflare.svg?react'
+import TailwindCSSIcon from '@/assets/icons/tailwindcss.svg?react'
+import { cn } from '@/lib/utils'
 
 
 export const Route = createFileRoute('/projects')({
-  component: RouteComponent,
+  component: RouteComponent
 })
 
 function RouteComponent() {
-  const svgsCn = cn([
-    'h-6'
-  ])
-  
+  const svgsCn = cn([ 'h-6' ])
+
   // TODO figure out a better way to handle the tech stacks
-  
+
   const cleverEvTechnologies = [
     {
-      name: 'Typescript',
+      name: 'TypeScript',
       icon: <TypescriptIcon className={svgsCn} />
     },
     {
@@ -41,7 +39,7 @@ function RouteComponent() {
     },
     {
       name: 'React Query',
-      icon: <ReactQueryIcon className={svgsCn + ' fill-[#FF4154]'} />
+      icon: <ReactQueryIcon className={`${svgsCn} fill-[#FF4154]`} />
     },
     {
       name: 'Cloudflare Workers',
@@ -49,10 +47,10 @@ function RouteComponent() {
     },
     {
       name: 'Prisma ORM',
-      icon: <PrismaORMIcon className={svgsCn + ' fill-white'} />
+      icon: <PrismaORMIcon className={`${svgsCn} fill-white`} />
     },
     {
-      name: 'Clickhouse DB',
+      name: 'ClickHouse DB',
       icon: <ClickhouseIcon className={svgsCn} />
     },
     {
@@ -60,10 +58,10 @@ function RouteComponent() {
       icon: <GitIcon className={svgsCn} />
     }
   ]
-  
+
   const portfolioTechnologies = [
     {
-      name: 'Typescript',
+      name: 'TypeScript',
       icon: <TypescriptIcon className={svgsCn} />
     },
     {
@@ -87,16 +85,16 @@ function RouteComponent() {
       icon: <GitIcon className={svgsCn} />
     }
   ]
-  
+
   return (
     <div className='flex flex-col gap-12'>
       <div className='flex flex-col gap-4'>
         <h1 className='text-5xl'>Projects</h1>
         <p className='font-NeueMaksimaLight'>
-          Here are some of the projects I've worked on:
+          Here are some of the projects I&apos;ve worked on:
         </p>
       </div>
-      
+
       <div className='flex flex-col gap-8'>
         <ProjectCard
           title='CleverEV'

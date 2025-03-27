@@ -65,9 +65,9 @@ export default {
         }
       },
       fontFamily: {
-        NeueMaksima: ['neue-maksima', 'neue-maksima-light', 'sans-serif'],
-        NeueMaksimaLight: ['neue-maksima-light', 'neue-maksima', 'sans-serif'],
-      },
+        NeueMaksima: [ 'neue-maksima', 'neue-maksima-light', 'sans-serif' ],
+        NeueMaksimaLight: [ 'neue-maksima-light', 'neue-maksima', 'sans-serif' ]
+      }
     }
   },
   plugins: [ require('tailwindcss-animate') ]

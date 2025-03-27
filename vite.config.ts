@@ -7,13 +7,13 @@ import path from 'node:path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-      react(),
-      TanStackRouterVite(),
-      svgr()
+    react(),
+    TanStackRouterVite(),
+    svgr()
   ],
   resolve: {
     alias: {
-      "@": path.resolve(import.meta.dirname, "./src"),
-    },
-  },
+      '@': path.resolve(import.meta.dirname, './src')
+    }
+  }
 })

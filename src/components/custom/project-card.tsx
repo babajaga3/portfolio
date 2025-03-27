@@ -1,16 +1,17 @@
 import { cn } from '@/lib/utils'
 import { Github, ExternalLink, Building } from 'lucide-react'
 
+
 interface ProjectCardProps {
-  title: string;
-  description: string;
-  period: string;
-  image: string;
-  technologies: { name: string, icon: React.ReactElement }[];
-  company?: string;
-  companyLink?: string;
-  githubLink?: string;
-  link?: string;
+  title: string
+  description: string
+  period: string
+  image: string
+  technologies: { name: string; icon: React.ReactElement }[]
+  company?: string
+  companyLink?: string
+  githubLink?: string
+  link?: string
 }
 
 export function ProjectCard({
@@ -34,13 +35,13 @@ export function ProjectCard({
     'rounded-lg',
     'transition-all duration-300'
   ])
-  
+
   const externalLinkCn = cn([
     'hover:text-theme-foreground-two',
     'transition-colors',
     'duration-200'
   ])
-  
+
   return (
     <div className={containerCn}>
       <div className='flex flex-col gap-8 sm:justify-between'>
