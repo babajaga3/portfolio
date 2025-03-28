@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { ProjectCard } from '@/components/custom/project-card'
+import { ProjectCard } from '@/components/custom'
 import cleverEv from '@/assets/cleverev-dash.png'
 import portfolio from '@/assets/portfolio-preview.png'
 import TypescriptIcon from '@/assets/icons/typescript.svg?react'
