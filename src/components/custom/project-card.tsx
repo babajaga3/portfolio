@@ -78,7 +78,7 @@ export function ProjectCard({
           </ul>
         </div>
       </div>
-      <img src={image} className='hidden lg:block lg:w-2/3 h-auto rounded-md' alt="CleverEV Dashboard Image" />
+      <img src={image} className='hidden lg:block object-contain lg:w-2/3 h-auto rounded-md' alt="CleverEV Dashboard Image" />
     </div>
   )
 }
