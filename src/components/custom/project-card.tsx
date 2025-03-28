@@ -57,7 +57,7 @@ export function ProjectCard({
                 <ExternalLink />
               </a>}
               {githubLink && <a className={externalLinkCn} href={githubLink} target="_blank" rel="noopener noreferrer">
-                <GithubIcon className={externalLinkCn+ ' h-7 fill-white hover:fill-theme-foreground-two'} />
+                <GithubIcon className={`${externalLinkCn} h-7 fill-white hover:fill-theme-foreground-two`} />
               </a>}
               {companyLink && <a className={externalLinkCn} href={companyLink} target="_blank" rel="noopener noreferrer">
                 <Building />
