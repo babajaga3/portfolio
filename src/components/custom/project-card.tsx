@@ -9,7 +9,6 @@ interface ProjectCardProps {
   technologies: { name: string; icon: React.ReactElement }[]
   image: string
   period?: string
-  company?: string
   companyLink?: string
   githubLink?: string
   link?: string
@@ -21,7 +20,6 @@ export function ProjectCard({
   period,
   image,
   technologies,
-  company,
   companyLink,
   link,
   githubLink
