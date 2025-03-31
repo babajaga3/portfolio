@@ -67,6 +67,20 @@ export default {
       fontFamily: {
         NeueMaksima: [ 'neue-maksima', 'neue-maksima-light', 'sans-serif' ],
         NeueMaksimaLight: [ 'neue-maksima-light', 'neue-maksima', 'sans-serif' ]
+      },
+      keyframes: {
+        expand: {
+          '0%': { maxWidth: '0' },
+          '100%': { maxWidth: '100%' }
+        },
+        shrink: {
+          '0%': { maxWidth: '100%' },
+          '100%': { maxWidth: '0' }
+        }
+      },
+      animation: {
+        'expand-once': 'expand 2.5s forwards',
+        'shrink': 'shrink 0.5s'
       }
     }
   },

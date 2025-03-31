@@ -27,7 +27,7 @@ function Index() {
         to="/projects"
       >
         Take a look at some of the things I have worked on 👉
-        <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white" />
+        <span className="block h-0.5 bg-white max-w-0 animate-expand-once group-hover:animate-shrink" />
       </Link>
       <div className='flex flex-col gap-8 mt-32'>
         <div className='text-2xl self-center'>Want to connect? 👇</div>
