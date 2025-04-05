@@ -12,16 +12,18 @@ export const resources = {
     translation: bg
   }
 } as const
-export const defaultNS = 'ns1'
+export const defaultNS = 'translation'
 
 i18n
   .use(initReactI18next)
   .init({
     compatibilityJSON: 'v4',
-    resources,
+    resources, // Locale files loaded here
     lng: 'en',
-    ns: [ 'ns1' ],
+    fallbackLng: 'en',
+    ns: 'translation',
     defaultNS,
+    fallbackNS: defaultNS,
     interpolation: {
       escapeValue: false // react is already safe from xss
     }
