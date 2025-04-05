@@ -1,9 +1,8 @@
+import '@/lib/i18next'
+import { RouterProvider, createRouter } from '@tanstack/react-router'
 import { StrictMode } from 'react'
 import * as ReactDOM from 'react-dom/client'
-import { RouterProvider, createRouter } from '@tanstack/react-router'
-import { IconoirProvider } from 'iconoir-react'
 import './index.css'
-import '@/lib/i18next'
 
 // Import the generated route tree
 import { routeTree } from './routeTree.gen'
@@ -22,16 +21,9 @@ declare module '@tanstack/react-router' {
 const rootElement = document.querySelector('#root')!
 if (!rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement)
-  root.render(<StrictMode>
-    <IconoirProvider
-      iconProps={{
-        color: '#EAB595',
-        strokeWidth: 1.3,
-        width: '1.3em',
-        height: '1.3em'
-      }}
-    >
+  root.render(
+    <StrictMode>
       <RouterProvider router={router} />
-    </IconoirProvider>
-  </StrictMode>)
+    </StrictMode>
+  )
 }
