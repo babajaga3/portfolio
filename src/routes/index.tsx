@@ -1,9 +1,9 @@
-import { ConnectCard } from '@/components/custom'
-import { createFileRoute, Link } from '@tanstack/react-router'
 import GithubIcon from '@/assets/icons/github.svg?react'
-import LinkedinIcon from '@/assets/icons/linkedin.svg?react'
 import EmailIcon from '@/assets/icons/gmail.svg?react'
+import LinkedinIcon from '@/assets/icons/linkedin.svg?react'
+import { ConnectCard } from '@/components/custom'
 import { cn } from '@/lib/utils'
+import { createFileRoute, Link } from '@tanstack/react-router'
 import { Trans, useTranslation } from 'react-i18next'
 
 
