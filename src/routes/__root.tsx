@@ -9,7 +9,7 @@ export const Route = createRootRoute({
       // 'text-theme-accent-two',
       // 'bg-theme-background-two',
       'font-NeueMaksima',
-      'px-8 sm:px-16',
+      'px-4 sm:px-16',
       'py-12',
       'h-screen',
       'overflow-auto',
