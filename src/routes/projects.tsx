@@ -13,6 +13,7 @@ import GitIcon from '@/assets/icons/git.svg?react'
 import CloudflareIcon from '@/assets/icons/cloudflare.svg?react'
 import TailwindCSSIcon from '@/assets/icons/tailwindcss.svg?react'
 import { cn } from '@/lib/utils'
+import { useTranslation } from 'react-i18next'
 
 
 export const Route = createFileRoute('/projects')({
@@ -20,6 +21,7 @@ export const Route = createFileRoute('/projects')({
 })
 
 function RouteComponent() {
+  const { t } = useTranslation('translation', { keyPrefix: 'projects' })
   const svgsCn = cn([ 'h-6' ])
 
   // TODO figure out a better way to handle the tech stacks
@@ -89,16 +91,16 @@ function RouteComponent() {
   return (
     <div className='flex flex-col gap-12'>
       <div className='flex flex-col gap-4'>
-        <h1 className='text-5xl'>Projects</h1>
+        <h1 className='text-5xl'>{t('title')}</h1>
         <p className='font-NeueMaksimaLight'>
-          Here are some of the projects I&apos;ve worked on:
+          {t('description')}
         </p>
       </div>
 
       <div className='flex flex-col gap-8'>
         <ProjectCard
-          title='CleverEV'
-          description='Full-stack management platform for electric vehicle charging stations.'
+          title={t('projects.cleverev.title')}
+          description={t('projects.cleverev.description')}
           image={cleverEv}
           link='https://cleverev.net'
           companyLink='https://commentcloud.tech'
@@ -106,8 +108,8 @@ function RouteComponent() {
           technologies={cleverEvTechnologies}
         />
         <ProjectCard
-          title='Portfolio'
-          description='My personal portfolio website.'
+          title={t('projects.portfolio.title')}
+          description={t('projects.portfolio.description')}
           image={portfolio}
           link='https://tomabourov.com'
           githubLink='https://github.com/babajaga3/portfolio'
