@@ -1,6 +1,7 @@
-import { createRootRoute, Outlet } from '@tanstack/react-router'
-import { cn } from '@/lib/utils'
 import { Constellation } from '@/components/custom/constellation'
+import { NavBar } from '@/components/custom/nav-bar'
+import { cn } from '@/lib/utils'
+import { createRootRoute, Outlet } from '@tanstack/react-router'
 
 
 export const Route = createRootRoute({
@@ -22,6 +23,12 @@ export const Route = createRootRoute({
           <Constellation />
         </div>
         <div className='relative z-10'>
+          <div className='mb-16 flex justify-between items-center'>
+            <h1 className={'text-xl md:text-3xl'}>
+              Toma Bourov | Тома Буров
+            </h1>
+            <NavBar />
+          </div>
           <Outlet />
         </div>
       </div>

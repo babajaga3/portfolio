@@ -34,7 +34,7 @@ export function Constellation({ style }: { style?: Partial<CSSStyleDeclaration> 
       interactivity: {
         events: {
           onClick: {
-            enable: true,
+            enable: false,
             mode: 'push'
           },
           onHover: {

@@ -1,9 +1,10 @@
-import { ConnectCard } from '@/components/custom'
-import { createFileRoute, Link } from '@tanstack/react-router'
 import GithubIcon from '@/assets/icons/github.svg?react'
-import LinkedinIcon from '@/assets/icons/linkedin.svg?react'
 import EmailIcon from '@/assets/icons/gmail.svg?react'
+import LinkedinIcon from '@/assets/icons/linkedin.svg?react'
+import { ConnectCard } from '@/components/custom'
 import { cn } from '@/lib/utils'
+import { createFileRoute, Link } from '@tanstack/react-router'
+import { Trans, useTranslation } from 'react-i18next'
 
 
 export const Route = createFileRoute('/')({
@@ -11,38 +12,56 @@ export const Route = createFileRoute('/')({
 })
 
 function Index() {
+  const { t } = useTranslation()
   const iconsCn = cn([ 'h-10' ])
 
   return (
-    <div className={'flex flex-col'}>
-      <h1 className={'text-5xl'}>
-        Toma Bourov | Тома Буров
-      </h1>
-      <p className={'pt-4 font-NeueMaksimaLight'}>
-        My name is Toma 👋. I am a <span className={'text-theme-foreground-two'}>Computer Science</span> and <span className={'text-theme-foreground-two'}>Psychology</span> Undergraduate at the <a className='underline text-[#4777AB]' href='https://www.aubg.edu/home-bg/' target='_blank' rel="noreferrer">American University in Bulgaria.</a> I have a keen interest in technology, visuals, design, biology, robotics and AI.
-      </p>
-      <p className='pt-2'>I also design websites sometimes.</p>
+    <div className={'flex flex-col mx-12'}>
+      
+      {/* Main text */}
+      
+      <div className='sm:mx-32'>
+        <p className={'pt-4 font-NeueMaksimaLight text-lg'}>
+          <Trans
+            i18nKey="index.paragraph-one"
+            components={{
+              1: <span className="text-theme-background" />,
+              2: <span className="text-theme-background" />,
+              3: <a className="text-blue-400 underline hover:text-blue-500 transition-all duration-300" href="https://www.aubg.edu/" />
+            }}
+          />
+        </p>
+        <p className='pt-2 mt-2'>
+          {t('index.paragraph-two')}
+        </p>
+      </div>
+      
+      {/* Projects Link */}
+      
       <Link
         className={'group text-2xl self-center mt-32'}
         to="/projects"
       >
-        Take a look at some of the things I have worked on 👉
+        {t('index.link')}
         <span className="block h-0.5 bg-white max-w-0 animate-expand-once group-hover:animate-shrink" />
       </Link>
+      
+      {/* Social Links */}
+      
       <div className='flex flex-col gap-8 mt-32'>
-        <div className='text-2xl self-center'>Want to connect? 👇</div>
+        <div className='text-2xl self-center'>{t('index.social.title')}</div>
         <div className='flex flex-col sm:flex-row justify-center gap-4'>
           <ConnectCard
             icon={<GithubIcon className={`${iconsCn} fill-white`} />}
-            name="GitHub" link="https://github.com/babajaga3"
+            name={t('index.social.github')} link="https://github.com/babajaga3"
           />
           <ConnectCard
             icon={<LinkedinIcon className={`${iconsCn} w-[40px]`} />}
-            name="LinkedIn" link="https://www.linkedin.com/in/toma-bourov/"
+            name={t('index.social.linkedin')} link="https://www.linkedin.com/in/toma-bourov/"
           />
           <ConnectCard
             icon={<EmailIcon className={`${iconsCn} fill-white`} />}
-            name="Email" link="mailto:me@tomabourov.com"
+            name={t('index.social.email')} link="mailto:me@tomabourov.com"
           />
         </div>
       </div>
