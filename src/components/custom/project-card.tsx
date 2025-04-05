@@ -1,4 +1,5 @@
 import { cn } from '@/lib/utils'
+import { useTranslation } from 'react-i18next'
 import { ExternalLink, Building } from 'lucide-react'
 import GithubIcon from '@/assets/icons/github.svg?react'
 
@@ -24,6 +25,8 @@ export function ProjectCard({
   link,
   githubLink
 }: ProjectCardProps) {
+  const { t } = useTranslation()
+
   const containerCn = cn([
     'flex',
     'justify-between',
@@ -65,7 +68,7 @@ export function ProjectCard({
           <p className="text-lg font-NeueMaksimaLight">{description}</p>
         </div>
         <div className='flex flex-col gap-4'>
-          <h3>Technologies:</h3>
+          <h3>{t('projects.projects.cleverev.technologies')}</h3>
           <ul className='flex flex-wrap sm:flex-col gap-2'>
             {technologies.map((tech, index) => (
               <li key={index} className='font-mono flex items-end gap-2'> {/* font - temp fix for centering items */}
@@ -76,7 +79,7 @@ export function ProjectCard({
           </ul>
         </div>
       </div>
-      <img src={image} className='hidden lg:block object-contain lg:w-2/3 h-auto rounded-md' alt="CleverEV Dashboard Image" />
+      <img src={image} className='hidden lg:block object-contain lg:w-2/3 h-auto rounded-md' alt="Project Image" />
     </div>
   )
 }

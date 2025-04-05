@@ -1,4 +1,13 @@
 {
+  "components": {
+    "nav-bar": {
+      "title": "Navigation",
+      "description": "Feel free to explore my projects and portfolio",
+      "home": "Home",
+      "projects": "Projects",
+      "contact": "Contact"
+    }
+  },
   "index": {
     "paragraph-one": "Hey 👋, my name is Toma. I am a <1>Computer Science</1> and <2>Psychology</2> Undergraduate at the <3>American University in Bulgaria</3>. I have a keen interest in technology, visuals, design, biology, robotics and AI.",
     "paragraph-two": "I also design websites sometimes.",
