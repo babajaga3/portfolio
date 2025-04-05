@@ -89,14 +89,16 @@ function RouteComponent() {
   ]
 
   return (
-    <div className='flex flex-col gap-12'>
+    <div className='-mt-8 flex flex-col gap-12 sm:-mt-4'>
       <div className='flex flex-col gap-4'>
-        <h1 className='text-5xl'>{t('title')}</h1>
-        <p className='font-NeueMaksimaLight'>
+        {/* <h1 className='text-3xl'>{t('title')}</h1> */}
+        <p className='font-NeueMaksimaLight text-lg'>
           {t('description')}
         </p>
       </div>
 
+      {/* Project cards */}
+      
       <div className='flex flex-col gap-8'>
         <ProjectCard
           title={t('projects.cleverev.title')}

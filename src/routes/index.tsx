@@ -16,23 +16,28 @@ function Index() {
   const iconsCn = cn([ 'h-10' ])
 
   return (
-    <div className={'flex flex-col'}>
-      <h1 className={'text-5xl'}>
-        Toma Bourov | Тома Буров
-      </h1>
-      <p className={'pt-4 font-NeueMaksimaLight'}>
-        <Trans
-          i18nKey="index.paragraph-one"
-          components={{
-            1: <span className="text-theme-background" />,
-            2: <span className="text-theme-background" />,
-            3: <a className="text-blue-400 underline hover:text-blue-500 transition-all duration-300" href="https://www.aubg.edu/" />
-          }}
-        />
-      </p>
-      <p className='pt-2'>
-        {t('index.paragraph-two')}
-      </p>
+    <div className={'flex flex-col mx-12'}>
+      
+      {/* Main text */}
+      
+      <div className='sm:mx-32'>
+        <p className={'pt-4 font-NeueMaksimaLight text-lg'}>
+          <Trans
+            i18nKey="index.paragraph-one"
+            components={{
+              1: <span className="text-theme-background" />,
+              2: <span className="text-theme-background" />,
+              3: <a className="text-blue-400 underline hover:text-blue-500 transition-all duration-300" href="https://www.aubg.edu/" />
+            }}
+          />
+        </p>
+        <p className='pt-2 mt-2'>
+          {t('index.paragraph-two')}
+        </p>
+      </div>
+      
+      {/* Projects Link */}
+      
       <Link
         className={'group text-2xl self-center mt-32'}
         to="/projects"
@@ -40,6 +45,9 @@ function Index() {
         {t('index.link')}
         <span className="block h-0.5 bg-white max-w-0 animate-expand-once group-hover:animate-shrink" />
       </Link>
+      
+      {/* Social Links */}
+      
       <div className='flex flex-col gap-8 mt-32'>
         <div className='text-2xl self-center'>{t('index.social.title')}</div>
         <div className='flex flex-col sm:flex-row justify-center gap-4'>
